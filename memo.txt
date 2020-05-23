@@ -1,0 +1,12 @@
+rails db:test:prepare
+rails db:migrate RAILS_ENV=test
+rails test
+
+sh dbupdate.sh
+rails c
+ActiveRecord::Base.connection.execute("BEGIN TRANSACTION; END;")
+
+
+rails db:migrate:resetではなく
+rm /var/rails_db/development.sqlite3
+rails db:create db:migrate
