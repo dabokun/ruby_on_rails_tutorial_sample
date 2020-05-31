@@ -10,7 +10,7 @@ gem 'sprockets-rails', '3.2.1'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
-gem 'puma', '3.12.4'
+gem 'puma', '3.12.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.1.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -34,7 +34,8 @@ gem 'bootstrap-sass', '3.4.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'sqlite3', '1.4.1'
+  #gem 'sqlite3', '1.4.1'
+  gem 'mysql2'
   gem 'byebug', '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
