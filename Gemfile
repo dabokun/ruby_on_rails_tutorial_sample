@@ -13,7 +13,7 @@ gem 'sprockets-rails', '3.2.1'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
-gem 'puma', '3.12.6'
+gem 'puma', '4.3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.1.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
